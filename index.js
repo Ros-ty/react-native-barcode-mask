@@ -203,6 +203,7 @@ class BarcodeMask extends React.Component {
                 },
               ]}
             />
+            <View style={{ borderWidth: this.props.edgeBorderWidth, borderColor: this.props.edgeColor, position: 'absolute', left: '50%', marginLeft: -this.props.width / 2 + 25, width: this.props.width - 50, height: this.props.height - 50, alignSelf: 'center',}} />
             <View style={[styles.maskFrame, this._applyMaskFrameTransparency()]} />
           </View>
           <View style={[styles.maskRow, styles.maskFrame, this._applyMaskFrameTransparency()]} />
