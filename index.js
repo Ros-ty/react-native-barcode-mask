@@ -190,7 +190,7 @@ class BarcodeMask extends React.Component {
         <View style={styles.maskOuter}>
           <View style={[styles.maskRow, styles.maskFrame, this._applyMaskFrameTransparency()]} />
           <View
-            style={[{ height: this.props.height }, styles.maskCenter]}
+            style={[{ height: this.props.height - 30 }, styles.maskCenter]}
             onLayout={this._onMaskCenterViewLayoutUpdated}
           >
             <View style={[styles.maskFrame, this._applyMaskFrameTransparency()]} />
@@ -200,6 +200,7 @@ class BarcodeMask extends React.Component {
                 {
                   width: this.props.width,
                   height: this.props.height,
+                  margin: -15,
                 },
               ]}
             />
