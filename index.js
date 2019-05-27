@@ -131,8 +131,8 @@ class BarcodeMask extends React.Component {
 
   _renderEdge = (edgePosition) => {
     const defaultStyle = {
-      width: this.props.edgeWidth + 10,
-      height: this.props.edgeHeight + 10,
+      width: this.props.edgeWidth,
+      height: this.props.edgeHeight,
       borderColor: this.props.edgeColor,
     };
     const edgeBorderStyle = {
