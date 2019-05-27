@@ -126,7 +126,7 @@ class BarcodeMask extends React.Component {
     ) {
       transparency = this.props.transparency;
     }
-    return { backgroundColor: 'rgba(0,0,0,' + transparency + ')' };
+    return { backgroundColor: 'rgba(85, 75, 107,' + transparency + ')' };
   };
 
   _renderEdge = (edgePosition) => {
@@ -235,7 +235,7 @@ const defaultProps = {
   edgeHeight: 20,
   edgeColor: '#FFF',
   edgeBorderWidth: 4,
-  transparency: 0.6,
+  transparency: 0.9,
   showAnimatedLine: true,
   animatedLineColor: '#FFF',
   animatedLineHeight: 2,
